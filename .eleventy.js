@@ -5,6 +5,12 @@ module.exports = function (eleventyConfig) {
     codeSync: false
   });
 
+  // copy `src/fonts` to `dist/fonts`
+  eleventyConfig.addPassthroughCopy("src/fonts");
+  
+  // copy `styles.css` to `dist`
+  eleventyConfig.addPassthroughCopy("src/styles.css");
+
   return {
     dir: {
       input: "src",

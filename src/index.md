@@ -1,6 +1,12 @@
 ---
-layout: base.njk
-title: Index title
+title: Getting words out
+layout: base
 ---
 
 # {{title}}
+
+It's not easy to articulate whilst tapping on a keyboard listening to your dialog internally.
+
+Conversation is a far more natural mechanism to express ones thoughts on a subject. Unfortunately, by then it's too late to have caught the idea or thought.
+
+My words are my own.
