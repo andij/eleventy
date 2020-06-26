@@ -1,12 +1,11 @@
 ---
-title: Getting words out
-layout: base
+title: 'Words'
+layout: 'layouts/archive.njk'
+pagination:
+  data: collections.items
+  size: 10
+  reverse: true
+permalink: archive/{{ pagination.pageNumber }}/index.html
 ---
 
-# {{title}}
-
-It's not easy to articulate whilst tapping on a keyboard listening to your dialog internally.
-
-Conversation is a far more natural mechanism to express ones thoughts on a subject. Unfortunately, by then it's too late to have caught the idea or thought.
-
-My words are my own.
+It’s made with [Eleventy](//11ty.dev), lives on [Netlify](//netlify.com), originated from Andy Bell.

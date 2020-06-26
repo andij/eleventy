@@ -1,5 +1,4 @@
-# compiled output
-/dist
+.DS_Store
 
-# dependencies
-/node_modules
+node_modules
+dist

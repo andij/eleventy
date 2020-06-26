@@ -1,23 +1,20 @@
 {
-  "name": "eleventy",
+  "name": "words",
   "version": "1.0.0",
-  "description": "Having a go at Eleventy",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/andij/eleventy.git"
+    "start": "ELEVENTY_ENV=development npx eleventy --serve"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/andij/eleventy/issues"
-  },
-  "homepage": "https://github.com/andij/eleventy#readme",
-  "devDependencies": {
-    "@11ty/eleventy": "^0.11.0"
+  "dependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "@11ty/eleventy-plugin-rss": "^1.0.7",
+    "axios": "^0.19.2",
+    "clean-css": "^4.2.1",
+    "moment": "^2.24.0",
+    "xml2json": "^0.12.0"
   }
 }

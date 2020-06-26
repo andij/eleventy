@@ -10,9 +10,9 @@
   font-style: normal;
   font-weight: normal;
   font-display: swap;
-  src: url('./fonts/LM-regular.woff2') format('woff2'),
-    url('./fonts/LM-regular.woff') format('woff'),
-    url('./fonts/LM-regular.ttf') format('truetype');
+  src: url('/fonts/LM-regular.woff2') format('woff2'),
+    url('/fonts/LM-regular.woff') format('woff'),
+    url('/fonts/LM-regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -20,9 +20,9 @@
   font-style: italic;
   font-weight: normal;
   font-display: swap;
-  src: url('./fonts/LM-italic.woff2') format('woff2'),
-    url('./fonts/LM-italic.woff') format('woff'),
-    url('./fonts/LM-italic.ttf') format('truetype');
+  src: url('/fonts/LM-italic.woff2') format('woff2'),
+    url('/fonts/LM-italic.woff') format('woff'),
+    url('/fonts/LM-italic.ttf') format('truetype');
 }
 
 @font-face {
@@ -30,9 +30,9 @@
   font-style: normal;
   font-weight: bold;
   font-display: swap;
-  src: url('./fonts/LM-bold.woff2') format('woff2'),
-    url('./fonts/LM-bold.woff') format('woff'),
-    url('./fonts/LM-bold.ttf') format('truetype');
+  src: url('/fonts/LM-bold.woff2') format('woff2'),
+    url('/fonts/LM-bold.woff') format('woff'),
+    url('/fonts/LM-bold.ttf') format('truetype');
 }
 
 @font-face {
@@ -40,9 +40,9 @@
   font-style: italic;
   font-weight: bold;
   font-display: swap;
-  src: url('./fonts/LM-bold-italic.woff2') format('woff2'),
-    url('./fonts/LM-bold-italic.woff') format('woff'),
-    url('./fonts/LM-bold-italic.ttf') format('truetype');
+  src: url('/fonts/LM-bold-italic.woff2') format('woff2'),
+    url('/fonts/LM-bold-italic.woff') format('woff'),
+    url('/fonts/LM-bold-italic.ttf') format('truetype');
 }
 
 /* Box sizing rules */
@@ -134,7 +134,7 @@ textarea {
 }
 
 /* Natural flow and rhythm in articles by default */
-article > * + * {
+article>*+* {
   margin-top: 1em;
 }
 
@@ -146,6 +146,7 @@ kbd {
     monospace;
   font-size: 85%;
 }
+
 pre {
   padding: 1rem 1.4rem;
   max-width: 100%;
@@ -153,10 +154,12 @@ pre {
   border-radius: 4px;
   background: hsl(210, 28%, 93%);
 }
+
 pre code {
   font-size: 95%;
   position: relative;
 }
+
 kbd {
   background: hsl(210, 5%, 100%);
   border: 1px solid hsl(210, 5%, 70%);
@@ -172,24 +175,32 @@ table {
   width: 100%;
   max-width: 100%;
 }
+
 th,
 td {
   text-align: left;
   padding: 0.5rem;
 }
+
 td {
   border-bottom: 1px solid hsl(0, 0%, 85%);
 }
+
 thead th {
   border-bottom: 2px solid hsl(0, 0%, 70%);
 }
+
 tfoot th {
   border-top: 2px solid hsl(0, 0%, 70%);
 }
 
 /* Center align the title */
 h1:first-child {
-  background-color: pink;
+  border-bottom: 1px solid pink;
+}
+
+h1:first-child a {
+  text-decoration: none;
 }
 
 /* Nested ordered list for ToC */
@@ -197,9 +208,11 @@ nav ol {
   counter-reset: item;
   padding-left: 2rem;
 }
+
 nav li {
   display: block;
 }
+
 nav li:before {
   content: counters(item, '.') ' ';
   counter-increment: item;
@@ -218,8 +231,9 @@ dl dd {
   margin: 12px 0;
   font-style: italic;
 }
+
 .theorem::before {
-  content: 'Theorem ' counter(theorem) '. ';
+  content: 'Theorem 'counter(theorem) '. ';
   font-weight: bold;
   font-style: normal;
 }
@@ -231,8 +245,9 @@ dl dd {
   margin: 12px 0;
   font-style: italic;
 }
+
 .lemma::before {
-  content: 'Lemma ' counter(theorem) '. ';
+  content: 'Lemma 'counter(theorem) '. ';
   font-weight: bold;
   font-style: normal;
 }
@@ -244,10 +259,12 @@ dl dd {
   font-style: normal;
   position: relative;
 }
+
 .proof::before {
-  content: 'Proof. ' attr(title);
+  content: 'Proof. 'attr(title);
   font-style: italic;
 }
+
 .proof:after {
   content: '◾️';
   position: absolute;
@@ -262,8 +279,9 @@ dl dd {
   margin: 12px 0;
   font-style: normal;
 }
+
 .definition::before {
-  content: 'Definition ' counter(definition) '. ';
+  content: 'Definition 'counter(definition) '. ';
   font-weight: bold;
   font-style: normal;
 }
@@ -282,6 +300,7 @@ dl dd {
   font-size: 85%;
   margin-bottom: 0.4rem;
 }
+
 .footnotes {
   border-top: 1px solid hsl(0, 0%, 39%);
 }
@@ -291,6 +310,7 @@ dl dd {
 .abstract p {
   text-align: center;
 }
+
 .abstract {
   margin: 2.25rem 0;
 }
@@ -355,17 +375,17 @@ h6 {
   line-height: 1.625rem;
 }
 
-h1 + h2 {
+h1+h2 {
   margin-top: 1.625rem;
 }
 
-h2 + h3,
-h3 + h4,
-h4 + h5 {
+h2+h3,
+h3+h4,
+h4+h5 {
   margin-top: 0.8rem;
 }
 
-h5 + h6 {
+h5+h6 {
   margin-top: -0.8rem;
 }
 

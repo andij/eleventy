@@ -1,0 +1,11 @@
+{
+  "name": "Drew's words",
+  "url": "https://words.drew-jones.com",
+  "authorEmail": "words@drew-jones.com",
+  "authorHandle": "@andij",
+  "authorName": "Drew Jones",
+  "maxPostsPerPage": 5,
+  "paymentPointer": "$coil.xrptipbot.com/c1f8f05d-8d8c-4f37-b1ad-25677ae129da",
+  "faviconPath": "/images/favicon.png"
+}
+

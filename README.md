@@ -1,5 +1,7 @@
-# eleventy
+# Words
 
-Having a go at Eleventy
+This is an [Eleventy](//11ty.dev) powered site, so the first thing you need to do after cloning this repo is run `npm install`. 
 
-Starting with https://www.11ty.io/docs/getting-started/
+To run it locally, run `npm start`.
+
+If you’re deploying to [Netlify](//netlify.com), set the build command to `eleventy` and the output directory to `dist`
